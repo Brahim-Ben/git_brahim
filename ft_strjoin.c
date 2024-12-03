@@ -6,13 +6,13 @@
 /*   By: bbenaali <bbenaali@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 08:07:12 by bbenaali          #+#    #+#             */
-/*   Updated: 2024/11/16 17:20:22 by bbenaali         ###   ########.fr       */
+/*   Updated: 2024/12/03 13:07:47 by bbenaali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	ft_strcat(char *dest, char const *src)
+static void	ft_strcat(char *dest, char const *src)
 {
 	while (*src != '\0')
 	{
@@ -21,7 +21,6 @@ static char	ft_strcat(char *dest, char const *src)
 		src++;
 	}
 	*dest = '\0';
-	return (*dest);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
